@@ -241,3 +241,4 @@ C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csproj.CoreCom
 C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csproj.CopyComplete
 C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.dll
 C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.pdb
+C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.Migrations.users.resources
