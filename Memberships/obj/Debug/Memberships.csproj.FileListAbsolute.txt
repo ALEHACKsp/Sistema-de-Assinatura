@@ -234,11 +234,10 @@ C:\GITHUB\Sistema-de-Assinatura\Memberships\bin\Microsoft.AI.DependencyCollector
 C:\GITHUB\Sistema-de-Assinatura\Memberships\bin\Microsoft.AI.WindowsServer.xml
 C:\GITHUB\Sistema-de-Assinatura\Memberships\bin\Microsoft.AI.Web.xml
 C:\GITHUB\Sistema-de-Assinatura\Memberships\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csprojAssemblyReference.cache
-C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.Migrations.Initial.resources
-C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csproj.GenerateResource.cache
 C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csproj.CoreCompileInputs.cache
 C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csproj.CopyComplete
 C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.dll
 C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.pdb
-C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.Migrations.users.resources
+C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.Migrations.initial.resources
+C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csproj.GenerateResource.cache
+C:\GITHUB\Sistema-de-Assinatura\Memberships\obj\Debug\Memberships.csprojAssemblyReference.cache

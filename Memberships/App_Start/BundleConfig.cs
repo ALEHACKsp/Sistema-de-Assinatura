@@ -14,8 +14,6 @@ namespace Memberships
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/admin").Include(
-                        "~/Scripts/AdminMenu.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -25,13 +23,29 @@ namespace Memberships
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/admin").Include(
+                     "~/Scripts/AdminMenu.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ui").Include(
+                      "~/Scripts/carret.js"
+                      //"~/Scripts/JWPlayer.js",
+                      //"~/Scripts/code.js",
+                      //"~/Scripts/RegisterUser.js",
+                      //"~/Scripts/login.js",
+                      //"~/Scripts/forgot-password.js"
+                      ));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/membership").Include(
                                         "~/Content/navbar.css",
-                                        "~/Content/thumbnails.css"));
+                                        "~/Content/thumbnails.css",
+                                        "~/Content/productcontent.css",
+                                        "~/Content/carret.css"));
+
+
 
         }
     }

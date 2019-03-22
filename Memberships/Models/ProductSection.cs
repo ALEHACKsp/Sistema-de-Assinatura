@@ -9,7 +9,7 @@ namespace Memberships.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public int IntemTypeId { get; set; }
+        public int ItemTypeId { get; set; }
         public IEnumerable<ProductItemRow> Items  { get; set; }
     }
 }

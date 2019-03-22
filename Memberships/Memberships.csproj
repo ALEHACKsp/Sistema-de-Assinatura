@@ -233,20 +233,18 @@
     <Compile Include="Extensions\ICollectionExtensions.cs" />
     <Compile Include="Extensions\IdentityExtensions.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Extensions\SectionExtension.cs" />
     <Compile Include="Extensions\ThumbnailExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903132049282_Initial.cs" />
-    <Compile Include="Migrations\201903132049282_Initial.Designer.cs">
-      <DependentUpon>201903132049282_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201903151516432_users.cs" />
-    <Compile Include="Migrations\201903151516432_users.Designer.cs">
-      <DependentUpon>201903151516432_users.cs</DependentUpon>
+    <Compile Include="Migrations\201903221901193_initial.cs" />
+    <Compile Include="Migrations\201903221901193_initial.Designer.cs">
+      <DependentUpon>201903221901193_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContentViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ProductItemRow.cs" />
@@ -265,6 +263,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\carret.css" />
     <Content Include="Content\Images\csharp-for-beginners.png" />
     <Content Include="Content\Images\csharp-zip.png" />
     <Content Include="Content\Images\laptop.jpg" />
@@ -274,6 +273,7 @@
     <Content Include="Content\Logos\membership-icon-large.png" />
     <Content Include="Content\Logos\membership-icon-small.png" />
     <Content Include="Content\navbar.css" />
+    <Content Include="Content\productcontent.css" />
     <Content Include="Content\thumbnails.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -346,7 +346,9 @@
     <Content Include="Areas\Admin\Views\SubscriptionProduct\Details.cshtml" />
     <Content Include="Areas\Admin\Views\SubscriptionProduct\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\SubscriptionProduct\Index.cshtml" />
+    <Content Include="Content\Documents\test_pdf.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\carret.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -404,6 +406,8 @@
     <Content Include="Views\Index.cshtml" />
     <Content Include="Views\Shared\_ThumbnailAreaPartial.cshtml" />
     <Content Include="Views\ProductContent\Index.cshtml" />
+    <Content Include="Views\ProductContent\_ProductItemRowPartial.cshtml" />
+    <Content Include="Views\ProductContent\_ProductSectionPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -422,11 +426,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903132049282_Initial.resx">
-      <DependentUpon>201903132049282_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903151516432_users.resx">
-      <DependentUpon>201903151516432_users.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903221901193_initial.resx">
+      <DependentUpon>201903221901193_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

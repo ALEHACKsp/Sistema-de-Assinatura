@@ -34,6 +34,7 @@
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -45,9 +46,11 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/admin")
-    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/ui")
     @Styles.Render("~/Content/membership")
-    @Styles.Render("~/Content/admin")
-    @Styles.Render("~/Content/ui")
+    @RenderSection("scripts", required: false)
+
+
+
 </body>
 </html>

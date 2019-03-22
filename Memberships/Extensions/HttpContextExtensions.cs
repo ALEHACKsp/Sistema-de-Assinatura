@@ -15,23 +15,17 @@ namespace Memberships.Extensions
         public static string GetUserId(this HttpContextBase ctx)
         {
             var uid = string.Empty;
-
             try
             {
                 var claims = ctx.GetOwinContext().Get<ApplicationSignInManager>()
-                    .AuthenticationManager.User.Claims.FirstOrDefault(
-                    claim => claim.Type.Equals(nameidentifier));
+                    .AuthenticationManager.User.Claims.FirstOrDefault(claim =>
+                    claim.Type.Equals(nameidentifier));
 
                 if (claims != default(Claim))
-                {
                     uid = claims.Value;
-                }
             }
-            catch (Exception ex)
-            {
-                throw;
-                
-            }
+            catch { }
+
             return uid;
         }
     }
