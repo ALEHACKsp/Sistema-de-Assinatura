@@ -218,6 +218,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductContentController.cs" />
+    <Compile Include="Controllers\RegistrationCodeController.cs" />
     <Compile Include="Entities\Item.cs" />
     <Compile Include="Entities\ItemType.cs" />
     <Compile Include="Entities\Part.cs" />
@@ -229,11 +230,14 @@
     <Compile Include="Entities\Subscription.cs" />
     <Compile Include="Entities\SubscriptionProduct.cs" />
     <Compile Include="Entities\UserSubscription.cs" />
+    <Compile Include="Extensions\EmailExtensions.cs" />
+    <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\HttpContextExtensions.cs" />
     <Compile Include="Extensions\ICollectionExtensions.cs" />
     <Compile Include="Extensions\IdentityExtensions.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="Extensions\SectionExtension.cs" />
+    <Compile Include="Extensions\SubscriptionExtensions.cs" />
     <Compile Include="Extensions\ThumbnailExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -250,6 +254,7 @@
     <Compile Include="Models\ProductItemRow.cs" />
     <Compile Include="Models\ProductSection.cs" />
     <Compile Include="Models\ProductSectionModel.cs" />
+    <Compile Include="Models\RegisterUserModel.cs" />
     <Compile Include="Models\ThumbnailAreaModel.cs" />
     <Compile Include="Models\ThumbnailModel.cs" />
     <Compile Include="Models\UserSubscriptionModel.cs" />
@@ -264,16 +269,20 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\carret.css" />
+    <Content Include="Content\forgot-password.css" />
     <Content Include="Content\Images\csharp-for-beginners.png" />
     <Content Include="Content\Images\csharp-zip.png" />
     <Content Include="Content\Images\laptop.jpg" />
     <Content Include="Content\Images\pdf.png" />
     <Content Include="Content\Images\unit-testing.png" />
     <Content Include="Content\Images\video.png" />
+    <Content Include="Content\login.css" />
     <Content Include="Content\Logos\membership-icon-large.png" />
     <Content Include="Content\Logos\membership-icon-small.png" />
     <Content Include="Content\navbar.css" />
     <Content Include="Content\productcontent.css" />
+    <Content Include="Content\RegisterCode.css" />
+    <Content Include="Content\RegisterUer.css" />
     <Content Include="Content\thumbnails.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -349,6 +358,7 @@
     <Content Include="Content\Documents\test_pdf.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\carret.js" />
+    <Content Include="Scripts\forgot-password.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -358,7 +368,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\login.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\RegisterCode.js" />
+    <Content Include="Scripts\RegisterUser.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -408,9 +421,14 @@
     <Content Include="Views\ProductContent\Index.cshtml" />
     <Content Include="Views\ProductContent\_ProductItemRowPartial.cshtml" />
     <Content Include="Views\ProductContent\_ProductSectionPartial.cshtml" />
+    <Content Include="Views\Shared\_RegisterCodePartial.cshtml" />
+    <Content Include="Views\Shared\_LoginPanelPartial.cshtml" />
+    <Content Include="Views\Shared\_RegisterUserPartial.cshtml" />
+    <Content Include="Views\Shared\_ForgotPassorwdPanelPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\RegistrationCode\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

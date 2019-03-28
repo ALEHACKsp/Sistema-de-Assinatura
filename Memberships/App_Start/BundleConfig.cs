@@ -27,12 +27,13 @@ namespace Memberships
                      "~/Scripts/AdminMenu.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/ui").Include(
-                      "~/Scripts/carret.js"
+                      "~/Scripts/carret.js",
                       //"~/Scripts/JWPlayer.js",
                       //"~/Scripts/code.js",
-                      //"~/Scripts/RegisterUser.js",
-                      //"~/Scripts/login.js",
-                      //"~/Scripts/forgot-password.js"
+                      "~/Scripts/RegisterCode.js",
+                      "~/Scripts/RegisterUser.js",
+                      "~/Scripts/login.js",
+                      "~/Scripts/forgot-password.js"
                       ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -43,7 +44,11 @@ namespace Memberships
                                         "~/Content/navbar.css",
                                         "~/Content/thumbnails.css",
                                         "~/Content/productcontent.css",
-                                        "~/Content/carret.css"));
+                                        "~/Content/carret.css",
+                                        "~/Content/login.css",
+                                        "~/Content/forgot-password.css",
+                                        "~/Content/RegisterUser.css",
+                                        "~/Content/RegisterCode.css"));
 
 
 

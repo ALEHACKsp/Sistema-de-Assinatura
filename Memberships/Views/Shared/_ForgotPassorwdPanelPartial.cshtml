@@ -1,0 +1,28 @@
+﻿@model Memberships.Models.ForgotPasswordViewModel
+
+<div class=" modal fade" id="pwdModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="panel panel-primary">
+            <div class=" panel-heading">
+                <h4>
+                    Esqueceu a senha?
+                   <a id="close-forgot-password" class="pull-right" data-dismiss="modal"><span class="glyphicon glyphicon-remove "></span></a>
+                </h4>
+            </div>
+            <div class="panel-body">
+                @Html.AntiForgeryToken()
+                <p>Digite seu email pra receber as instruções pra redefinir sua senha</p>
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                    @Html.TextBoxFor(m=> m.Email,new { @class="form-control reset-email",@placeholder="Digite seu email"})
+                    <button id="resetPwd" class="btn btn-primary"type="button" >Redefinir senha</button>
+                </div>   
+                <div class="support-text">
+                    <strong>Houve algum problema?</strong> &nbsp; Envie um email pra nós.
+                    <a href="mailto:info@csharpschool.com">Suporte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

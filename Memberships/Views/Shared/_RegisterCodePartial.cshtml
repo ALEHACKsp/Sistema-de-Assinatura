@@ -1,0 +1,14 @@
+﻿
+@if (Request.IsAuthenticated)
+{
+    <div class="panel panel-primary register-code-panel">
+        <div class="panel-heading">
+            <h4 class="panel-title">Código Registro</h4>
+        </div>
+        <div class="panel-body input-group">
+            <input type="text" class="form-control" placeholder="Entre com o codigo aqui." />
+            <button class="btn btn-primary" type="button">Enviar</button>
+        </div>
+        <div class="alert alert-danger hidden">Não foi possível registar o código</div>
+    </div>
+}
